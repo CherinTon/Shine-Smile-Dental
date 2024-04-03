@@ -1,0 +1,178 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* width: 1440px; */
+    scroll-behavior: smooth;
+}
+body {
+    font-size: 1.6rem;
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+:root {
+    --btn-text-color: #fff;
+    --btn-bg-hover: #2e80ce;
+    --header-color: #10375c;
+    --text-color: #c9d2da;
+}
+/* Custom Scrollbars  */
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(180deg, #d0368a 0%, #708ad4 99%);
+    border-radius: 100px;
+}
+/* Common */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+a:hover {
+    /* color: #fff; */
+    font-weight: 500;
+}
+.break-all {
+    word-break: break-all;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    max-width: calc(100% - 135px);
+}
+body {
+    width: 100%;
+}
+.btn {
+    --height-btn: 60px;
+    display: inline-block;
+    border-radius: 999px;
+    color: #fff;
+    background: var(--btn-bg-hover);
+    border: 2px solid var(--btn-bg-hover);
+    padding: 0 20px;
+    min-width: 205px;
+    height: var(--height-btn);
+    line-height: --height-btn;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: 0.5s, -webkit-mask-size 0.5s 0.5s;
+}
+.btn:hover {
+    background: transparent;
+    border: 1px solid var(--btn-bg-hover);
+}
+/* header */
+.header {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 30px;
+    background: var(--header-color);
+}
+.header.fixed {
+    position: sticky;
+    top: -15px;
+    z-index: 999;
+}
+.header .head-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.head-nav .logo {
+    display: flex;
+    align-content: center;
+    font-size: 1rem;
+}
+.logo-icon::before,
+.logo-icon::after {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.logo-icon::before {
+    width: 3em;
+    height: 3em;
+    background: #2e80ce;
+}
+
+.logo-icon::after {
+    position: absolute;
+    top: 1.5em;
+    left: 1.2em;
+    width: 1.6em;
+    height: 1.6em;
+    background: #fff;
+}
+.logo .logo-text span {
+    display: block;
+    color: #fff;
+    margin-left: 0.6em;
+    text-align: right;
+    line-height: 1em; /* 77.778% */
+}
+.logo .shine-logo {
+    font-size: 1.8em;
+    font-weight: 400;
+}
+.logo .smile-logo {
+    font-size: 1.2em;
+}
+
+.navbar .navbar__list {
+    display: flex;
+}
+.log-in,
+.navbar .navbar__link {
+    padding: 4px 22px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 28px; /* 175% */
+}
+.navbar__link:hover,
+.navbar__link-active {
+    text-shadow: 1px 0 0 currentColor;
+}
+.navbar__link-active::before {
+    position: relative;
+    top: -2px;
+    left: -4px;
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.head-nav .action {
+    display: flex;
+    align-items: center;
+}
+
+.action .sign-up {
+    --height-btn: 44px;
+    min-width: 104px;
+}
