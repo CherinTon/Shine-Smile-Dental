@@ -45,10 +45,7 @@ a {
     text-decoration: none;
     color: #fff;
 }
-a:hover {
-    /* color: #fff; */
-    font-weight: 500;
-}
+
 .break-all {
     word-break: break-all;
 }
@@ -151,6 +148,7 @@ body {
     font-size: 1.6rem;
     line-height: 28px; /* 175% */
 }
+a:hover,
 .navbar__link:hover,
 .navbar__link-active {
     text-shadow: 1px 0 0 currentColor;
@@ -175,4 +173,68 @@ body {
 .action .sign-up {
     --height-btn: 44px;
     min-width: 104px;
+}
+
+/* Heron */
+
+.hero {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.hero .hero__info {
+    margin: 60px 113px 60px 0;
+    width: 517px;
+}
+.hero__info-text .hero__info-title {
+    color: #fff;
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 80px; /* 114.286% */
+    letter-spacing: -1.4px;
+}
+.hero__info-desc {
+    margin-top: 22px;
+    color: #c9d2da;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 30px; /* 166.667% */
+}
+.hero__info-contact {
+    display: flex;
+    justify-items: center;
+    margin-top: 38px;
+}
+.hero__info-call {
+    margin-left: 38px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 60px; /* 166.667% */
+}
+.hero-img {
+    position: relative;
+}
+.hero-img img {
+    border-radius: 6px;
+    object-fit: cover;
+}
+.hero-img {
+}
+.hero-img1 {
+    width: 330px;
+    height: 540px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 0;
+    right: 200px;
+}
+.hero-img2 {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 210px;
+    height: 410px;
+    z-index: -1;
 }
