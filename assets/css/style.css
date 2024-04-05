@@ -529,6 +529,15 @@ a:hover,
     display: flex;
     column-gap: 28px;
 }
+.app__btn-img {
+    transition: 0.3s;
+}
+.app__btn-img:hover {
+    transform: translateY(-4px);
+    /* box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.075); */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 19px 38px,
+        rgba(0, 0, 0, 0.1) 0px 15px 12px;
+}
 /* News*/
 
 .new__inner {
